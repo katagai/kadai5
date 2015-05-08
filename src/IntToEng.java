@@ -13,11 +13,18 @@ public class IntToEng {
 
     // 数値を英訳する変換するメソッド
     static String translateEng(int n) {
-    	String num[] = {"zero","one","two","three","four",
+    	String[] num = {"zero","one","two","three","four",
     			"five","six","seven","eight","nine","ten",
     			"eleven","twelve","thirteen","fourteen","fifteen",
     			"sixteen","seventeen","eighteen","ninetten"};
     	
-        return num[n];
+    	if (n < 20) return num[n];
+
+    	String[] num2 = {"twenty","thirty","fourty","fifty",
+    			"sixty","seventy","eighty","ninety"};
+    	
+    	//String number[][] = 
+    	
+    return num[n];
     }
 }
