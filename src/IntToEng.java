@@ -12,19 +12,26 @@ public class IntToEng {
     }
 
     // 数値を英訳する変換するメソッド
-    static String translateEng(int n) {
+    public static String translateEng(int n) {
     	String[] num = {"zero","one","two","three","four",
-    			"five","six","seven","eight","nine","ten",
-    			"eleven","twelve","thirteen","fourteen","fifteen",
-    			"sixteen","seventeen","eighteen","ninetten"};
+    			"five","six","seven","eight","nine","ten"};
     	
-    	if (n < 20) return num[n];
+    	String[] num2={"eleven","twelve","thirteen","fourteen","fifteen",
+    			"sixteen","seventeen","eighteen","ninetten"};
 
-    	String[] num2 = {"twenty","thirty","fourty","fifty",
+    	String[] num3 = {"twenty","thirty","fourty","fifty",
     			"sixty","seventy","eighty","ninety"};
     	
-    	//String number[][] = 
-    	
-    return num[n];
+    	if(n <= 10) return num[n];
+    	if(10 < n || n<20) return num2[n-11];
+    	return "";
     }
-}
+    public static String ite(int n){
+    	int a = Integer.valueOf(num3[n]).intValue();
+    	int b = Integer.valueOf(num[n]);
+    	
+    	}
+    
+    }	
+    	
+
